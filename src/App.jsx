@@ -3,7 +3,7 @@ import { NavLink, Route, Routes } from 'react-router-dom'
 function Home() {
   return (
     <section className="hero card">
-      <span className="eyebrow">REACT + VITE STARTER</span>
+      <span className="eyebrow">REACT + VITE STARTER with Abhi</span>
       <h1>Build something <span>great.</span></h1>
       <p>A clean starting point with client-side routing, reusable layout, and responsive styling.</p>
       <div className="hero-actions">
