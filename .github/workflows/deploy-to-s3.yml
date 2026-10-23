@@ -7,6 +7,18 @@ jobs:
             - name: "checkout code"
               uses: actions/checkout@v4
 
+            - name: setup node
+              uses: actions/setup-node@v4
+              with:
+                node-version: 20
+                cache: "npm"
+
+            - name: "install dependencies"
+              run: npm install   
+              
+            - name: "make build"
+              run: npm run build  
+
             - name: "Configure AWS credentials"
               uses: aws-actions/configure-aws-credentials@v6
               with:
@@ -15,6 +27,6 @@ jobs:
                 aws-region: ${{ secrets.AWS_REGION }}
 
             - name: "upload files to s3"
-              run: aws s3 sync ./ s3://${{ secrets.S3_BUCKET_NAME }} --delete
+              run: aws s3 sync ./dist s3://${{ secrets.S3_BUCKET_NAME }} --delete
 
           
