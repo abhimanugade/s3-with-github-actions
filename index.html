@@ -1,121 +1,14 @@
 <!doctype html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home | My React App</title>
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      background: #f4f7fb;
-      color: #1f2937;
-    }
-
-    header {
-      background: #2563eb;
-      color: white;
-      padding: 20px 8%;
-    }
-
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 16px;
-    }
-
-    nav h2 {
-      font-size: 24px;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin-left: 20px;
-    }
-
-    main {
-      min-height: 75vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 40px 20px;
-    }
-
-    .hero {
-      max-width: 650px;
-    }
-
-    .hero h1 {
-      font-size: clamp(32px, 6vw, 52px);
-      margin-bottom: 20px;
-    }
-
-    .hero p {
-      font-size: 18px;
-      line-height: 1.7;
-      color: #64748b;
-      margin-bottom: 28px;
-    }
-
-    .btn {
-      display: inline-block;
-      background: #2563eb;
-      color: white;
-      padding: 14px 28px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .btn:hover {
-      background: #1d4ed8;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #e2e8f0;
-    }
-  </style>
-</head>
-
-<body>
-  <header>
-    <nav>
-      <h2>My Website</h2>
-      <div>
-        <a href="/">Home</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </nav>
-  </header>
-
-  <main>
-    <section class="hero">
-      <h1>Welcome to Code with Abhi</h1>
-      <p>
-        Welcome to my website! Explore my projects,
-        learn more about me, and discover what I build.
-      </p>
-      <a class="btn" href="#about">Get Started</a>
-    </section>
-  </main>
-
-  <footer id="contact">
-    <p>&copy; 2026 My Website. All rights reserved.</p>
-  </footer>
-</body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0f172a" />
+    <meta name="description" content="A simple React and Vite multi-route starter app." />
+    <title>React Vite Starter</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
